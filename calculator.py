@@ -12,10 +12,6 @@ def btn_click(numbers):
     display_box.insert(0, str(current) + str(numbers))
 
 
-# def btn_del():
-#     pass
-
-
 def btn_clear():
     display_box.delete(0, END)
 
@@ -110,7 +106,7 @@ button_1 = Button(button_frame, text="1", padx=40, pady=20, command=lambda: btn_
 button_0 = Button(button_frame, text="0", padx=87, pady=20, command=lambda: btn_click(0))
 button_dot = Button(button_frame, text=".", padx=41, pady=20, command=lambda: btn_click('.'))
 
-button_del = Button(button_frame, text="DEL", padx=34, pady=20) #commabd=btn_del)
+button_del = Button(button_frame, text="DEL", padx=34, pady=20)
 button_clear = Button(button_frame, text="CLEAR", padx=25, pady=20, command=btn_clear)
 button_plus = Button(button_frame, text="+", padx=40, pady=20, command=btn_add)
 button_minus = Button(button_frame, text="-", padx=40, pady=20, command=btn_subtract)
